@@ -96,7 +96,7 @@ header{
 }
 .quote-box{
     margin: 0 auto;
-    width: 670px;
+    max-width: 670px;
     padding-top: 63px;
 }
 .quote-main{
@@ -134,9 +134,12 @@ header{
 }
 
 .quote-sub{
-  padding-top: 50px;
+  max-width:670px ;
+  padding-top: 20px;
+  margin: 0 auto;
+  line-height: 24px;
+  text-align: center;
   display: flex;
-  padding-bottom: 30px;
 }
 .quote-sub li{
   width: 45%;
@@ -153,8 +156,7 @@ header{
 
 /*  ------------------content---------------*/
 .container{
-    margin:0 auto; 
-    /*水平置中*/
+    margin:0 auto; /*水平置中*/
     max-width:1290px;
     width: 90vw;
     display:flex;
@@ -164,7 +166,7 @@ header{
   
 .card{
   width:48%;
-  margin-right: 20px;
+  margin: 0 auto;
   margin-top:30px;
 }
 
@@ -179,7 +181,7 @@ header{
 }
 .content-box .title{
   font-weight: bold;
-  font-size:28px;
+  font-size:1.75rem;
   line-height: normal;
 }
 .content-box .sub-title{
@@ -191,8 +193,7 @@ header{
   display: flex;
 }
 .hashtag{
-  font-size:16px;
-  line-height: normal;
+  line-height: 2rem;
   background-color:#F1F1F1;
   border-radius: 16px;
   padding: 4px 12px 4px 12px;
@@ -227,7 +228,6 @@ footer{
 }
 .footer-wrap{
   margin: 0 auto;
-  /* max-width: 1296px; */
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -260,9 +260,6 @@ footer{
 }
 
 
-@media(max-width: 767px){
-  
-}
 @media(max-width: 414px){
   header{
     justify-content: space-between;
@@ -280,9 +277,56 @@ footer{
   .menu{
     margin: 0;
   } 
+ 
+  .banner{
+    height: 540px;
+  }
+  .quote-main-words{
+    font-size: 1.25rem;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+  .quote-main-words .mark-1{
+    width: 100px;
+    position: absolute;
+    bottom: 60px;
+  }
+  .quote-main-words .mark-2{
+    width: 100px;
+    position: absolute;
+    bottom: 0px;
+    right: 100px;
+  }
+  .quote-img-box.quote-left{
+    position: initial;
+    margin: 0 auto;
+  }
+  .quote-img-box.quote-right{
+    display: none;
+  }
+  .quote-sub{
+    flex-wrap: wrap;
+    max-width: 235px;
+  }
+  .quote-sub li{
+    width: 90%;
+    margin: 0 auto;
+  }
+  .hashtag{
+    margin-right: 5px;
+  }
+
   .card{
     margin: 30px auto 0;
     width: 90%;
   }
-  
+  .content-box .title{
+    font-size: 1.25rem;
+  }
+  .footer-wrap{
+    flex-wrap: wrap;
+  }
+  .footer-content{
+    margin-bottom: 2rem;
+  }
 }
