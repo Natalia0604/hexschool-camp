@@ -1,0 +1,288 @@
+/* css reset */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* ----------------------------------- */
+
+*{
+  font-family: "Noto Sans TC", sans-serif;
+  box-sizing: border-box;
+    img{
+        width: 100%;
+        vertical-align: middle;
+    }
+
+    a{
+        text-decoration: none;
+    }
+}
+
+/*------------------- header----------------- */
+header{
+    max-width:1296px;
+    height: 96px;
+    margin: 0 auto;
+    display: flex;
+}
+.hamburger-icon{
+    display: none;
+}
+.logo{
+    align-content: center; 
+}
+.menu{
+    margin : 0 auto;  /*   水平置中 */
+    align-content: center;  
+      /*  垂直置中 */
+}
+.menu li{
+    display: inline;
+    margin: 0 10px;
+}
+
+.menu a{
+    color: black;
+}
+
+/*---------------- banner------------------- */
+.banner{
+    background-color: #FAFAFA;
+    height: 460px;
+}
+.quote-box{
+    margin: 0 auto;
+    width: 670px;
+    padding-top: 63px;
+}
+.quote-main{
+  position:relative;
+}
+.quote-img-box{
+    width: 50px;
+    z-index: 20;
+}
+.quote-img-box.quote-left{
+  position:  absolute;
+  left: 0px;
+}
+.quote-img-box.quote-right{
+  position:  absolute;
+  right: 0px;
+}
+.quote-main-words{
+  font-size: 1.5rem;
+  padding-top: 50px;
+  text-align: center;
+  line-height: 1.8rem;
+  position: relative;
+}
+
+.quote-main-words .mark-1{
+  width: 148px;
+  position: absolute;
+  bottom: 26px;
+}
+.quote-main-words .mark-2{
+  width: 148px;
+  position: absolute;
+  bottom: 0px;
+}
+
+.quote-sub{
+  padding-top: 50px;
+  display: flex;
+  padding-bottom: 30px;
+}
+.quote-sub li{
+  width: 45%;
+  margin: 0 auto;
+}
+.quote-sub.title{
+  justify-content: center;
+  line-height: 1.5rem;
+  color: #5B5B5B;
+  margin-bottom: 10px;
+}
+
+
+
+/*  ------------------content---------------*/
+.container{
+    margin:0 auto; 
+    /*水平置中*/
+    max-width:1290px;
+    width: 90vw;
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+.card{
+  width:48%;
+  margin-right: 20px;
+  margin-top:30px;
+}
+
+.img-box img{
+  width:100%;
+  border-radius: 8px;
+}
+
+/* 文字 */
+.content-box{
+    padding: 1em;
+}
+.content-box .title{
+  font-weight: bold;
+  font-size:28px;
+  line-height: normal;
+}
+.content-box .sub-title{
+  margin-top: 10px;
+  margin-bottom: 20px;
+  color: #919191;
+}
+.hashtag-box{
+  display: flex;
+}
+.hashtag{
+  font-size:16px;
+  line-height: normal;
+  background-color:#F1F1F1;
+  border-radius: 16px;
+  padding: 4px 12px 4px 12px;
+  margin-right :10px;
+}
+
+/* -------------------pagination 頁碼 ------------------*/
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.pagination button {
+  margin: 0 5px;
+  padding: 5px 10px;
+  border: 1px solid#FFFFFF;
+  background-color: #FFFFFF;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.pagination button.active {
+  background-color: black;
+  color: #fff;
+}
+/* ------------footer ------------------*/
+footer{
+  background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/footer-bg-lg.png?raw=true");
+  padding: 50px 0;
+}
+.footer-wrap{
+  margin: 0 auto;
+  /* max-width: 1296px; */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.footer-wrap .logo{
+  width: 101px;
+}
+.footer-content .logo,.footer-content p{
+  margin-bottom: 20px;
+}
+.footer-content h5{
+  color: #919191;
+}
+.footer-button{
+  width: 306px;
+  height: 72px;
+  display: flex;
+  margin-bottom: 24px;
+  border-radius: 8px;
+  align-items: center;
+}
+
+.footer-button.black{
+  background-color: black;
+  color:white;
+}  
+.footer-icon{
+  width: 40px;
+  margin-right: 5px;
+}
+
+
+@media(max-width: 767px){
+  
+}
+@media(max-width: 414px){
+  header{
+    justify-content: space-between;
+    height: 3.5rem;
+  }
+  .nav-menu {
+    display: none;
+  }
+  .hamburger-icon {
+    display: block;
+    font-size: 30px;
+    text-align: end;
+    padding-right: 10px;
+  }
+  .menu{
+    margin: 0;
+  } 
+  .card{
+    margin: 30px auto 0;
+    width: 90%;
+  }
+  
+}
